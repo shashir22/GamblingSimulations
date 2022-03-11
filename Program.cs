@@ -1,18 +1,16 @@
-﻿using System;
+﻿using GamblingSimulations;
+using System;
 
-namespace GamblingSimulations
+namespace Gambling_Simulator
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to gambing simulation");
-            int stakeHold = 100;
-            const int bet = 1;
-
-            Gambler Gambler = new Gambler();
-            Gambler.winLoss();
+            Console.WriteLine("welcome to Gambling_Simulator_Game");
+            Gambler gambler = new Gambler();
+            gambler.gamblerstake();
+            gambler.Win_Loss();
         }
     }
-
 }
